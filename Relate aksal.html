@@ -1,4 +1,123 @@
-<div id='ignielRelated'>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Related Thumb Axsal</title>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<style>
+body {
+  background:0 0;
+  margin:0;
+  padding:0;
+  color:#333;
+  font-family:-apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Oxygen-Sans","Ubuntu","Cantarell","Helvetica Neue",sans-serif;
+}
+a {
+  text-decoration:none;
+  transition:all 400ms ease-in-out;
+}
+*{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+
+/* Related Post Grid by igniel.com */
+#ignielRelated{
+  display:block;
+  margin:20px 0px;
+  line-height:1.5em;
+}
+#ignielRelated h3.title{
+  font-size:16px;
+  font-weight:600;
+  text-align:center;
+  text-transform:uppercase;
+  line-height:initial;
+}
+#ignielRelated h3.title span{
+  background-color:#fff;
+  padding:0px 15px;
+  position:relative;
+  z-index:1;
+}
+#ignielRelated h3.title:before{
+  content: '';
+  display: block;
+  position: relative;
+  top:10px;
+  width: 100%;
+  border-top: 2px solid #cccccc;
+}
+#ignielRelated ul{
+  margin:20px 0px 0px;
+  padding:0px;
+  display:flex;
+  display:-webkit-flex;
+  flex-wrap:wrap;
+  -webkit-flex-wrap:wrap;
+  -ms-flex-wrap:wrap;
+}
+#ignielRelated ul li{
+  list-style:none;
+  width:calc((100% / 3) - 15px);
+  text-align:center;
+  margin-right:20px;
+  margin-bottom:20px;
+  padding:0px;
+  -webkit-margin-start:0px !important;
+}
+#ignielRelated ul li .thumb{
+  overflow:hidden;
+  line-height:0px;
+  border-radius:7px;
+}
+#ignielRelated ul li:nth-of-type(3n){
+  margin-right:0px;
+}
+#ignielRelated ul li a{
+  display:block;
+}
+#ignielRelated ul li a.judul{
+  color:#000; /* Warna Huruf */
+  font-weight:600;
+  margin-top:7px;
+}
+#ignielRelated ul li a.judul:hover, #ignielRelated ul li:hover a.judul{
+  color:#ff5722; /* Warna Huruf Ketika Disorot */
+}
+#ignielRelated ul li a img{
+  width:100%;
+  max-height:143px;
+  transition:all .3s ease;
+  border:0px;
+  margin:0px;
+}
+#ignielRelated ul li a img:hover, #ignielRelated ul li:hover img{
+  transform:scale(1.1) rotate(-5deg);
+  filter: brightness(75%);
+  -webkit-filter: brightness(75%);
+}
+#ignielRelated .norelated{
+  text-align:center;
+  font-weight:600;
+}
+@media screen and (max-width:480px){
+  #ignielRelated ul li{
+    width: calc((100% / 2) - 7.5px);
+    margin-right:15px;
+    margin-bottom:15px;
+  }
+  #ignielRelated ul li:nth-of-type(3n){
+    margin-right:15px;
+  }
+  #ignielRelated ul li:nth-of-type(2n){
+    margin-right:0px;
+  }
+}
+</style>
+</head>
+<body>
+
+!-- Related Post Grid by igniel.com -->
+  <div id='ignielRelated'>
     <h3 class='title'><span>Related Posts</span></h3>
     <script>//<![CDATA[
       var jumlah = 6;
@@ -6,7 +125,7 @@
       //]]></script>
     <b:if cond='data:post.labels'>
       <b:loop values='data:post.labels' var='label'>
-        <script expr:src='&quot;https://clickaxs.blogspot.com/feeds/posts/default/-/&quot; + data:label.name + &quot;?alt=json-in-script&amp;callback=relpostimgcuplik&amp;max-results=25&quot;'/>
+        <script expr:src='"https://clickaxs.blogspot.com/feeds/posts/default/-/" + data:label.name + "?alt=json-in-script&amp;callback=relpostimgcuplik&amp;max-results=25"'/>
       </b:loop>
       <ul>
         <script>ignielRelatedGrid();</script>
@@ -15,3 +134,6 @@
       There is no other posts in this category.
     </b:if>
   </div>
+<div class='clear'/>
+</body>
+</html>
