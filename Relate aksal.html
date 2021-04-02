@@ -6,7 +6,7 @@
       //]]></script>
     <b:if cond='data:post.labels'>
       <b:loop values='data:post.labels' var='label'>
-        <script expr:src='&quot;/feeds/posts/default/-/&quot; + data:label.name + &quot;?alt=json-in-script&amp;callback=relpostimgcuplik&amp;max-results=25&quot;'/>
+        <script expr:src='&quot;https://clickaxs.blogspot.com/feeds/posts/default/-/&quot; + data:label.name + &quot;?alt=json-in-script&amp;callback=relpostimgcuplik&amp;max-results=25&quot;'/>
       </b:loop>
       <ul>
         <script>ignielRelatedGrid();</script>
