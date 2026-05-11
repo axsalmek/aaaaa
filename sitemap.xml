@@ -6,9 +6,7 @@
 </sitemap>
 
 <sitemap>
-<loc>
-https://www.axsdrama.my.id/atom.xml?redirect=false&amp;start-index=1&amp;max-results=500
-</loc>
+<loc>https://www.axsdrama.my.id/atom.xml?redirect=false&amp;start-index=1&amp;max-results=500</loc>
 </sitemap>
 
 </sitemapindex>
