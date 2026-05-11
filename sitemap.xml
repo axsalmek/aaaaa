@@ -2,11 +2,13 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <sitemap>
-<loc>https://www.axsdrama.my.id/atom.xml?redirect=false&start-index=1&max-results=500</loc>
+<loc>https://www.axsdrama.my.id/sitemap.xml</loc>
 </sitemap>
 
 <sitemap>
-<loc>https://www.axsdrama.my.id/atom.xml?redirect=false&start-index=501&max-results=500</loc>
+<loc>
+https://www.axsdrama.my.id/atom.xml?redirect=false&amp;start-index=1&amp;max-results=500
+</loc>
 </sitemap>
 
 </sitemapindex>
